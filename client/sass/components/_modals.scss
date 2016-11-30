@@ -1,0 +1,30 @@
+/**
+  * Modals Partial SASS
+  * This SASS has the modals dialogs
+**/
+.dialog {
+  width: 50%;
+  z-index: 99;
+  top: 5%;
+  form {
+    padding: 20px 20px 100px;
+    h1 {
+      text-align: center;
+      font-size: em(35px);
+    }
+    p {
+      font-size: em(22px);
+      margin: 20px 0;
+    }
+    div {
+      text-align: center;
+      .material-icons {
+        font-size: em(32px);
+      }
+      h2 {
+        font-size: em(30px);
+        margin: 0 auto;
+      }
+    }
+  }
+}

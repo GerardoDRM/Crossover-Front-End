@@ -1,0 +1,37 @@
+/**
+  * Variables Partial SASS
+  * This SASS file has the palette color
+  * the media queries break points and fonts attributes.
+**/
+
+// Basic colors
+$white: #FFF;
+$black: #000;
+$grey: #878787;
+$grey-material : #EEEEEE;
+$primary-color: #212121;
+$grey-900: #212121;
+$deep-orange: #FF5722;
+$orange-400: #FFA726;
+$orange-300: #FFB74D;
+$accent-color : #FF4081;
+// Asset paths
+$path-img-css: "../../img";
+
+// Media query break points
+$brk-less-lg: "(min-width: 1200px)";
+$brk-max-md: "(max-width: 900px)";
+$brk-less-max-md: "(max-width: 992px)and(min-width:768px)";
+$brk-max-sm: "(max-width: 768px)";
+$brk-less-max-sm: "(max-width: 768px)and(min-width:500px)";
+
+// Font stack
+
+// Font Weights
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+
+// Text Size
+$base__font-size: 16px;

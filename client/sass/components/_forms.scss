@@ -1,0 +1,77 @@
+/**
+  * Forms Partial SASS
+  * This SASS file has all
+  * forms used on the app
+**/
+.login-form {
+  width: 90%;
+  margin: 0 auto;
+  .mdl-textfield {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+}
+.star-rating {
+  width: 165px;
+  height: 33px;
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+  .rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: justify;
+    font-size: 25px;
+    & > span {
+      width: 1.1em;
+      height: 1.1em;
+      position: relative;
+      display: inline-block;
+      color: yellow;
+    }
+  }
+  input {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    display: inline-block;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+    &:checked + i,
+    &:hover + i {
+      opacity: 1;
+    }
+  }
+  i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    opacity: 0;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+    background-size: contain;
+    & ~ i {
+      width: 40%;
+      & ~ i {
+        width: 60%;
+        & ~ i {
+          width: 80%;
+          & ~ i {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

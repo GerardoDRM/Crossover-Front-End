@@ -1,0 +1,57 @@
+<div>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall header-video">
+      <!-- Top row, always visible -->
+      <div class="mdl-layout__header-row video-logo-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">
+          <div class="video-logo"></div>
+          <span class="mdl-layout-title text">Video Cross|Over</span>
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+          <label class="mdl-button mdl-js-button mdl-button--icon" ng-click="logout()">
+            <i class="material-icons">exit_to_app</i>
+          </label>
+        </div>
+      </div>
+      <!-- Bottom row, not visible on scroll -->
+      <div class="mdl-layout__header-row">
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Videos grid -->
+        <div class="mdl-grid video-maxwidth" id="videos-container">
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- Custom Dialog for detail video-->
+  <dialog class="mdl-dialog dialog">
+    <form>
+      <h1>{{video.name}}</h1>
+      <div>
+        <i class="material-icons red">favorite</i>
+        <h2>{{video.rating}}</h2>
+      </div>
+      <video width="100%" controls id="video">
+        <source type="video/mp4">
+      </video>
+      <div>
+        <span class="star-rating">
+        <input type="radio" name="rating" value="1" ng-click="addGrade()" ng-model="grade"><i></i>
+        <input type="radio" name="rating" value="2" ng-click="addGrade()" ng-model="grade"><i></i>
+        <input type="radio" name="rating" value="3" ng-click="addGrade()" ng-model="grade"><i></i>
+        <input type="radio" name="rating" value="4" ng-click="addGrade()" ng-model="grade"><i></i>
+        <input type="radio" name="rating" value="5" ng-click="addGrade()" ng-model="grade"><i></i>
+          </span>
+      </div>
+      <p>{{video.description}}</p>
+      <div class="mdl-dialog__actions">
+        <button class="mdl-button mdl-js-button mdl-button--raised close" ng-click="closeDialog()">Cerrar</button>
+      </div>
+    </form>
+  </dialog>
+</div>

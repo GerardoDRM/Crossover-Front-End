@@ -1,0 +1,47 @@
+/**
+  * Header Partial SASS
+  * This SASS file has the header components
+  * used on the app
+**/
+// Main Header
+.header-video {
+  background-color: $primary-color;
+  position: relative;
+  .video-logo-row {
+    min-height: 200px;
+    padding: 0;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    .video-logo {
+      background: url("../img/videoLg.png") center/cover no-repeat;
+      height: 100px;
+      width: 100px;
+      margin: auto auto 10px;
+    }
+    .mdl-layout-title {
+      font-size: em(26px);
+      text-align: center;
+      font-weight: 600;
+      text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 0 2px rgba(0, 0, 0, .3), 0 1px 3px rgba(0, 0, 0, .2), 0 2px 5px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .15);
+    }
+    .text {
+      display: block;
+    }
+  }
+}
+// Waterfall effect
+.is-compact {
+  .video-logo-row {
+    min-height: auto;
+    .video-logo {
+      height: 50px;
+      width: 50px;
+      margin-top: 7px;
+    }
+    .text {
+      display: none;
+    }
+  }
+}

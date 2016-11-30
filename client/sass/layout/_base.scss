@@ -1,0 +1,63 @@
+/**
+  * BASE Partial SASS
+  * This SASS file has general components
+  * used on the app
+**/
+/*General*/
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url("material.woff2") format('woff2');
+}
+
+.app,
+.main_container,
+body,
+html {
+  height: 100%;
+}
+
+.main_container {
+  position: relative;
+
+}
+body::before {
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    background-image: url('https://rehab.marketing/wp-content/uploads/2015/11/video-production-slate.jpg');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+.mdl__title {
+  font-size: em(20px);
+}
+.mdl__supporting-text {
+  font-size: em(16px);
+}
+.no-margin {
+  margin: 0;
+}
